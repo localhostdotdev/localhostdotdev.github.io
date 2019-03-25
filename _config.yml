@@ -1,0 +1,11 @@
+title: localhostdotdev
+email: localhostdotdev@protonmail.com
+twitter_username: localhostdotdev
+github_username: localhostdotdev
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: pretty

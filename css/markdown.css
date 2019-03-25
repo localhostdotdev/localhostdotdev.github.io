@@ -1,0 +1,10 @@
+.markdown ul {
+  margin-left: 40px;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px;
+}
