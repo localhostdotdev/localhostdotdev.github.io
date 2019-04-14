@@ -41,9 +41,7 @@ a few links one could find helpful:
   - no emojis in titles :sad: (😂)
 - there was a "Low Quality" reason for story downvotes that got removed ([source](https://github.com/lobsters/lobsters/blob/master/app/models/vote.rb#L23))
 
-(mostly linking to master mostly because I'm lazy)
-
-thanks to pushcx, jcs and [all the current and past contributors for the amazing work BTW](https://github.com/lobsters/lobsters/graphs/contributors), and to everyone in the lobsters community, quite an amazing prowess.
+thanks to pushcx, jcs and [all the current and past contributors](https://github.com/lobsters/lobsters/graphs/contributors) for the amazing work BTW, and to everyone in the lobsters community, quite an amazing prowess.
 
 ----
 
