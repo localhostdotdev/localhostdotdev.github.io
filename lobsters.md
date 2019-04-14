@@ -49,7 +49,7 @@ thanks to pushcx, jcs and [all the current and past contributors](https://github
 
 - the comments about "enabling postgresql" are a lie :) (schema + search depends on mysql at least)
 - all assets are through the asset pipeline
-- Gemfile is pretty minimalistic, nothing fancy except the [rotp](https://github.com/mdp/rotp)/[rqrcode](https://github.com/whomwah/rqrcode) security gems
+- Gemfile is pretty minimalistic, nothing fancy except the [rotp](https://github.com/mdp/rotp) (2FA code) and [rqrcode](https://github.com/whomwah/rqrcode) (QR code) gems used for security
   - [ruumba](https://github.com/ericqweinstein/ruumba), rubocop linting for erb, quite cool
 - activity has been quite stable and it has been open to contributors for a quite long time
 - issues/PRs are managed (e.g. not abandoned/ignored like most projects)
