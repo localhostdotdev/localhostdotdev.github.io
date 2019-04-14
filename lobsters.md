@@ -16,7 +16,7 @@ a few links one could find helpful:
 
 **here is some interesting bits that I found**  (to the best of my understanding)
 
-- replies on stories with negative comments are not shown ([source](https://github.com/lobsters/lobsters/commit/02ed8c3783ca4d602cbfcc39d6df7dedd0460bc1))
+- replies on stories with negative comments are not shown ([source](https://github.com/lobsters/lobsters/commit/02ed8c3783ca4d602cbfcc39d6df7dedd0460bc1)) (in your /replies)
 - usernames are limited to 25 characters, alphanumeric start + (alphanumeric _ -) (ascii) ([source](https://github.com/lobsters/lobsters/blob/master/app/models/user.rb#L78-L80))
 - there is a list of banned usernames like admin/moderator/root/etc. :) ([source](https://github.com/lobsters/lobsters/blob/master/app/models/user.rb#L103-L106))
 -  7 days for "new" users, 10 karma to suggest title/tags, 50 karma to downvote, -4 karma to submit stories/invitations, 51% of posts from you = "heavy self promoter" (at least 2 stories), ([source](https://github.com/lobsters/lobsters/blob/master/app/models/user.rb#L108-L127))
