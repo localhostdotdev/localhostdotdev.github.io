@@ -57,7 +57,7 @@ thanks to pushcx, jcs and [all the current and past contributors](https://github
   - "Feature requests are no longer being accepted, unless in the form of a pull request with code."
 - uses jquery/select2 and a bit of JS, nothing crazy, I would say "pragmatic" (no turbolinks)
 - long files instead of multiple files are preferred in most cases
-- no spring/bootsnap it seems (quite good idea as it's the source of 90% of my rails dev experience frustration)
+- no spring/bootsnap it seems (quite a good idea as it's the source of 90% of my rails dev experience frustration)
 - seems like every once in a while someone tries to migrate to postgres and "kind of" succeeds but not really (search is the hard part)
 - follows the "small controllers, fat models" mantra
 - erb for templates
