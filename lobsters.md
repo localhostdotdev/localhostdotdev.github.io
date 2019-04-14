@@ -22,7 +22,7 @@ a few links one could find helpful:
 -  7 days for "new" users, 10 karma to suggest title/tags, 50 karma to downvote, -4 karma to submit stories/invitations, 51% of posts from you = "heavy self promoter" (at least 2 stories), ([source](https://github.com/lobsters/lobsters/blob/master/app/models/user.rb#L108-L127))
 - markdown is a custom parser based on nokogiri on top of [commonmarker](https://github.com/gjtorikian/commonmarker) that follows the CommonMark spec + github flavored markdown ([source](https://github.com/lobsters/lobsters/blob/master/extras/markdowner.rb)):
   - h1, h2, etc. are converted to bold (so good)
-  - images to links to the image (except moderators :) ([source](https://github.com/lobsters/lobsters/commit/efe350581144019f25c8e69d826f14bc6e66ae08)) (alt of the image is used for the text of the link if provided)
+  - images to links for images (except moderators :) ([source](https://github.com/lobsters/lobsters/commit/efe350581144019f25c8e69d826f14bc6e66ae08)) (alt of the image is used for the text of the link if provided)
   - nofollow for links
   - @username are auto-linked to the user's profile on lobsters
 - IP addresses (linked to user id/username/url) are logged on login, sending invites, and when fetching urls (sent in the User-Agent header) ([source](https://github.com/lobsters/lobsters/search?q=remote_ip&unscoped_q=remote_ip)) (also on upvotes it seems ([source](https://github.com/lobsters/lobsters/commit/0cea4d497cb5f86a8b623c880c650524b44b4255)))
