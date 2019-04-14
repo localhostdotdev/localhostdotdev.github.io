@@ -5,8 +5,8 @@ title: pages
 
 <ul>
 {% for page in site.pages %}
-  {% unless page.url == "/" %}
+  {% if page.url != "/" and page.url != "/404/" and page.layout == "default" %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-  {% endunless %}
+  {% endif %}
 {% endfor %}
 </ul>
