@@ -81,7 +81,7 @@ thanks to pushcx, jcs and [all the current and past contributors](https://github
 - no redis cache / in-memory cache (except memoizing) (e.g. no Rails.cache)
 - `has_secure_password` (bcryt)
 
-having a web application that is still active and which source code I can almost read in ~2 hours is quite an amazing feat in itself.
+having a web application that is 5+ years ago, still active and which source code I can almost read in ~2 hours is quite an amazing feat in itself.
 
 -------
 
