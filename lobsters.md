@@ -61,7 +61,7 @@ thanks to pushcx, jcs and [all the current and past contributors](https://github
 - follows the "small controllers, fat models" mantra
 - erb for templates
 - everything is very minimalistic, pragmatic, simple in general
-- looks like some BSD/MIT license but doesn't have a name (I think it's a 3 licenses thing)
+- looks like some BSD/MIT license but doesn't have a name (I think it's a 3 licenses thing) ([/u/tedu](https://lobste.rs/s/bb80bu/quick_scan_through_lobsters_s_source_code#c_xq5hne) "I believe the name of the license is “BSD minus advertising clause” or “3 clause BSD”")
 - processing done with cron ([source](https://github.com/lobsters/lobsters-ansible/tree/master/roles/lobsters/templates/sbin))
 - has [ansible](https://github.com/lobsters/lobsters-ansible) and [docker](https://github.com/utensils/docker-lobsters) setups
   - mariadb actually :)
