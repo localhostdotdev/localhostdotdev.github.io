@@ -3,7 +3,7 @@ title: quick scan through lobsters's source code
 layout: default
 ---
 
-let's dive deep into the source to see what's going on there.
+let's dive ~~deep~~ quickly into the source to see what's going on there.
 
 a few links one could find helpful:
 
