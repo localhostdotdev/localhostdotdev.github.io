@@ -1,0 +1,41 @@
+table {
+  overflow-x: scroll;
+}
+
+table, table th, table tr, table td {
+  padding: 10px 2px;
+  margin: 10px 2px;
+  word-wrap: break-word;
+}
+
+tr:nth-of-type(odd) td {
+  background: #eee;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre code {
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px 6px;
+}
+
+.container {
+  margin: auto;
+  padding: 40px;
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 15px;
+  }
+}
