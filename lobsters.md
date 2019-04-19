@@ -93,7 +93,7 @@ having a web application that is 5+ years ago, still active and which source cod
 
 ---------
 
-[source of this post on github](https://github.com/localhostdotdev/localhostdotdev.github.io/blob/master/lobsters.md)
+[source of this poge on github](https://github.com/localhostdotdev/localhostdotdev.github.io/blob/master/lobsters.md)
 
 [lobsters comments](https://lobste.rs/s/bb80bu/quick_scan_through_lobsters_s_source_code)
 

@@ -62,6 +62,8 @@ let's review how exisiting solutions compare:
 
 [source](https://gist.github.com/localhostdotdev/e6b5470b4e1a63394f8f30bb35b0d8ed)
 
+[thanks to this markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+
 disclaimer: I wrote many hacks around those in the past
 
 what about having it today?
@@ -140,3 +142,7 @@ User.last.settings.notifications.email?
 - some people will say it's slow (not my bottleneck at least)
 - and maybe some people will like it :)
 - if you find bugs, I would be very happy to fix them (as I use this in real code and all my tests are green)
+
+-------
+
+[source of this page on github](https://github.com/localhostdotdev/localhostdotdev.github.io/blob/master/simple_hash.md)
