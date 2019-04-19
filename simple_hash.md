@@ -24,7 +24,7 @@ tr th:last-child {
 
 you know `Struct`, `Hash`, `OpenStruct`, `HashWithIndifferentAccess`, [your custom classes], etc. what if there was a better way, one key-value class that would combine the best of all worlds?
 
-I call it `SimpleHash` and here is how I would use it:
+I would call it `SimpleHash` and here is how I would use it:
 
 ```ruby
 me = SimpleHash[name: "localhostdotdev", writing?: true]
@@ -123,9 +123,11 @@ class SimpleHashSerializer
   end
 end
 
-class User
+class User < ApplicationRecord
   serialize :settings, SimpleHashSerializer
 end
+
+User.last.settings.notifications.email?
 ```
 
 - some people won't like the deep conversion
@@ -136,3 +138,4 @@ end
 - some people want good class names (I did that but removed it)
 - some people will say it's slow (not my bottleneck at least)
 - and maybe some people will like it :)
+- if you find bugs, I would be very happy to fix them (as I use this in real code and all my tests are green)
