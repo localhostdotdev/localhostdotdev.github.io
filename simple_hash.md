@@ -27,19 +27,19 @@ you know `Struct`, `Hash`, `OpenStruct`, `HashWithIndifferentAccess`, [your cust
 I would call it `SimpleHash` and here is how I would use it:
 
 ```ruby
-me = SimpleHash[name: "localhostdotdev", writing?: true]
-me.name # => localhostdotdev
-me.writing? # => true
-me[:name] # => localhostdotdev
-me["name"] # => lcoalhostdotev
-me.namme # => NoMethodError, did you mean? name
-me.try(:nammmes) # => nil
-me.keys # => [:name, :writing?]
-me.values # => ["localhostdotdev", true]
+user = SimpleHash[name: "localhostdotdev", writing?: true]
+user.name # => "localhostdotdev"
+user.writing? # => true
+user[:name] # => "localhostdotdev"
+user["name"] # => "lcoalhostdotev"
+user.namme # => NoMethodError, did you mean? name
+user.try(:nammmes) # => nil
+user.keys # => [:name, :writing?]
+user.values # => ["localhostdotdev", true]
 
 # what about that?
 user = SimpleHash[emails: [{ domain: "localhost.dev" }]]
-user.emails.first.domain # localhost.dev
+user.emails.first.domain # "localhost.dev"
 ```
 
 sounds cool?
@@ -131,6 +131,7 @@ User.last.settings.notifications.email?
 ```
 
 - some people won't like the deep conversion
+- some people would like the deep conversion to happen on [] / fetch calls etc. (e.g. internal data is deep converted)
 - some people won't like the indifferent access
 - some people won't like the `method_missing` (`define_method` would need to stay in sync with the keys)
 - some people won't like depending on activesupport`
