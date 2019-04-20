@@ -145,4 +145,36 @@ User.last.settings.notifications.email?
 
 -------
 
+***edits**:
+
+[two](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elbl5uf/) [people](https://discord.gg) mentionned [https://github.com/intridea/hashie].
+
+```ruby
+$hashie.name # => "localhostdotdev"
+$hashie.keys # => ["name", "writing?"]
+$hashie[:name] # => "localhostdotdev"
+$hashie["name"] # => "localhostdotdev"
+$hashie.names # => nil
+$hashie.to_json # => "{\"name\":\"localhostdotdev\",\"writing?\":true}"
+$hashie.emails.first.domain # => "localhost.dev"
+```
+
+so pretty close except it's not raising NoMethodError (like OpenStruct).
+
+[someone](https://lobste.rs/s/rkxpjb/simplehash#c_wl1gth) mentionned write access which I didn't think much about because it's mostly read-only in my use case.
+
+```ruby
+user = SimpleHash[name: "a"]
+user[:name] = { prefix: "a", suffix: "b" }
+user.name.prefix # => "a"
+
+hash = SimpleHash[a: { deep: { key: [:with, :an, :array] } }]
+hash[:a][:deep][:key] += [:and, :more]
+hash # => {"a"=>{"deep"=>{"key"=>[:with, :an, :array, :and, :more]}}}
+```
+
+so works fine except it doesn't do `hash.a.deep.key += [:and, :more]` which is on purpose as my use case is mostly read only so writes have to be very explicit.
+
+-------
+
 [source of this page on github](https://github.com/localhostdotdev/localhostdotdev.github.io/blob/master/simple_hash.md)
