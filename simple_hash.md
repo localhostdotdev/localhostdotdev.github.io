@@ -69,8 +69,11 @@ what about having it today?
 
 ```ruby
 class SimpleHash < Hash
-  def initialize
-    raise 'not supported'
+  def initialize(constructor = {})
+    raise 'not supported' unless constructor.respond_to?(:to_hash)
+    super()
+    update(constructor)
+    freeze
   end
 
   def self.[](data)
