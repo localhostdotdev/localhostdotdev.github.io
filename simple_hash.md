@@ -145,9 +145,9 @@ User.last.settings.notifications.email?
 
 -------
 
-***edits**:
+**edits**
 
-[two](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elbl5uf/) [people](https://discord.gg) mentionned [https://github.com/intridea/hashie].
+[two](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elbl5uf/) [people](https://discord.gg) mentionned [hashie](https://github.com/intridea/hashie).
 
 ```ruby
 $hashie.name # => "localhostdotdev"
