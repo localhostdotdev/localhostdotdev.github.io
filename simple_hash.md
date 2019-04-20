@@ -178,3 +178,7 @@ so works fine except it doesn't do `hash.a.deep.key += [:and, :more]` which is o
 -------
 
 [source of this page on github](https://github.com/localhostdotdev/localhostdotdev.github.io/blob/master/simple_hash.md)
+
+[comments on reddit /r/ruby](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/)
+
+[comments on lobsters](https://lobste.rs/s/rkxpjb/simplehash)
