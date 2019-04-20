@@ -98,7 +98,7 @@ class SimpleHash < HashWithIndifferentAccess
 
   def simple_convert(value)
     if value.is_a?(Hash)
-      SimpleHash[value]
+      SimpleHash[value].freeze
     elsif value.is_a?(Array)
       value.map { |val| convert(val) }
     else
@@ -174,6 +174,14 @@ hash # => {"a"=>{"deep"=>{"key"=>[:with, :an, :array, :and, :more]}}}
 ```
 
 so works fine except it doesn't do `hash.a.deep.key += [:and, :more]` which is on purpose as my use case is mostly read only so writes have to be very explicit.
+
+thanks to electrostat for [the bug report](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elculhf/), doing `user.emails.first.merge!(domain2: 'google.com')` would be misleading since the original SimpleHash would not change.
+
+I updated the code so that the converted hashes are frozen and this will raise `FrozenError (can't modify frozen SimpleHash)`.
+
+the recommended way to do this is `user[:emails].first.merge!(domain3: 'example.com')`
+
+(I should add "I can fix the bugs" to the comparaison table :) )
 
 -------
 
