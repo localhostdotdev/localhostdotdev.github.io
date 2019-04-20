@@ -145,7 +145,7 @@ User.last.settings.notifications.email?
 
 -------
 
-**edits**
+**edit 1**
 
 [two](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elbl5uf/) [people](https://discord.gg) mentionned [hashie](https://github.com/intridea/hashie).
 
@@ -161,6 +161,8 @@ $hashie.emails.first.domain # => "localhost.dev"
 
 so pretty close except but it's not raising NoMethodError (like OpenStruct).
 
+**edit 2**
+
 [someone](https://lobste.rs/s/rkxpjb/simplehash#c_wl1gth) mentionned write access which I didn't think much about because it's mostly read-only in my use case.
 
 ```ruby
@@ -174,6 +176,8 @@ hash # => {"a"=>{"deep"=>{"key"=>[:with, :an, :array, :and, :more]}}}
 ```
 
 so works fine except it doesn't do `hash.a.deep.key += [:and, :more]` which is on purpose as my use case is mostly read only so writes have to be very explicit.
+
+**edit 3**
 
 thanks to electrostat for [the bug report](https://www.reddit.com/r/ruby/comments/bf5iq9/simplehash/elculhf/), doing `user.emails.first.merge!(domain2: 'google.com')` would be misleading since the original SimpleHash would not change.
 
