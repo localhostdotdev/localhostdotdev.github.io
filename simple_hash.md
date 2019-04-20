@@ -100,7 +100,7 @@ class SimpleHash < HashWithIndifferentAccess
     if value.is_a?(Hash)
       SimpleHash[value]
     elsif value.is_a?(Array)
-      value.map { |value| convert(value) }
+      value.map { |val| convert(val) }
     else
       value
     end
