@@ -22,8 +22,6 @@ tr th:last-child {
 }
 </style>
 
-**edit** not sure about this anymore, I would rather inherint from Hash and lose the "indifferent access", also making it read-only allows to use `define_method` which is nice.
-
 you know `Struct`, `Hash`, `OpenStruct`, `HashWithIndifferentAccess`, [your custom classes], etc. what if there was a better way, one key-value class that would combine the best of all worlds?
 
 I would call it `SimpleHash` and here is how I would use it:
@@ -70,36 +68,48 @@ disclaimer: I wrote many hacks around those in the past
 what about having it today?
 
 ```ruby
-class SimpleHash < HashWithIndifferentAccess
+class SimpleHash < Hash
+  def initialize
+    raise 'not supported'
+  end
+
+  def self.[](data)
+    super(data).freeze
+  end
+
   def method_missing(method_name, *args, &block)
-    if keys.include?(method_name.to_s)
-      if args.empty? && block.nil?
-        send(:simple_fetch, method_name)
-      else
-        raise "can't pass arguments and/or blocks"
-      end
+    if keys.map(&:to_s).include?(method_name.to_s) && args.empty? && block.nil?
+      fetch(method_name)
     else
       super
     end
   end
 
   def respond_to_missing?(method_name, include_private = false)
-    keys.include?(method_name.to_s) || super
+    keys.map(&:to_s).include?(method_name.to_s) || super
   end
 
   def methods
-    super + keys
+    super + keys.map(&:to_sym)
   end
 
-  def simple_fetch(key)
-    simple_convert(fetch(key))
+  def [](key)
+    if keys.include?(key.to_s)
+      super(key.to_s)
+    else
+      super(key.to_sym)
+    end
+  end
+
+  def fetch(key)
+    convert(super(key.to_sym) { super(key.to_s) })
   end
 
   private
 
-  def simple_convert(value)
+  def convert(value)
     if value.is_a?(Hash)
-      SimpleHash[value].freeze
+      SimpleHash[value]
     elsif value.is_a?(Array)
       value.map { |val| convert(val) }
     else
@@ -187,6 +197,14 @@ I updated the code so that the converted hashes are frozen and this will raise `
 the recommended way to do this is `user[:emails].first.merge!(domain3: 'example.com')`
 
 (I should add "I can fix the bugs" to the comparaison table :) )
+
+**edit 4**
+
+moved to a restricted frozen hash (`merge`/etc. still works as it produces a copy) that doesn't depend on active support (inherint from `Hash` directly).
+
+doesn't handle most methods like HashWithIndifferentAccess does so the symbol/string keys is mostly superfical.
+
+clearly not perfect but good enough for now.
 
 -------
 
