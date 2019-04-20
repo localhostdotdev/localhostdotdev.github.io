@@ -91,12 +91,12 @@ class SimpleHash < HashWithIndifferentAccess
   end
 
   def simple_fetch(key)
-    convert(fetch(key))
+    simple_convert(fetch(key))
   end
 
   private
 
-  def convert(value)
+  def simple_convert(value)
     if value.is_a?(Hash)
       SimpleHash[value]
     elsif value.is_a?(Array)
