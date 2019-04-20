@@ -22,7 +22,7 @@ tr th:last-child {
 }
 </style>
 
-**edit** not sure about this anymore, I would rather inherint from Hash and lost the "indifferent access", also making it read-only allows to use `define_method` which is nice.
+**edit** not sure about this anymore, I would rather inherint from Hash and lose the "indifferent access", also making it read-only allows to use `define_method` which is nice.
 
 you know `Struct`, `Hash`, `OpenStruct`, `HashWithIndifferentAccess`, [your custom classes], etc. what if there was a better way, one key-value class that would combine the best of all worlds?
 
