@@ -159,7 +159,7 @@ $hashie.to_json # => "{\"name\":\"localhostdotdev\",\"writing?\":true}"
 $hashie.emails.first.domain # => "localhost.dev"
 ```
 
-so pretty close except it's not raising NoMethodError (like OpenStruct).
+so pretty close except but it's not raising NoMethodError (like OpenStruct).
 
 [someone](https://lobste.rs/s/rkxpjb/simplehash#c_wl1gth) mentionned write access which I didn't think much about because it's mostly read-only in my use case.
 
