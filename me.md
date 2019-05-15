@@ -37,7 +37,7 @@ you can contact me at work@localhostdotdev.com (in the process of making that em
 
 **2015**
 
-- hires two engineers, one becomes my manager after i refuse to become manager
+- hires two engineers, one becomes my manager after i decline to become manager
 - we have many disagreements, i decide to leave
 - anual revenue grew 10x in two years (~800k to ~10m) (and we made a whole lot of people happier)
 - company still exists, has probably 4x-5x more employees as when i started at least
