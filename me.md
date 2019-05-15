@@ -20,8 +20,8 @@ you can contact me at work@localhostdotdev.com (in the process of making that em
 **2018**
 
 - work for two european companies (both rails)
-- leaves both because of low engineering standards
-- personal projects with rails (with and without react)
+- leave both because of low engineering standards
+- personal projects (rails with and without react)
 
 **2017**
 
