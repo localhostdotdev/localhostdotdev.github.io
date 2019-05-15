@@ -39,7 +39,7 @@ you can contact me at work@localhostdotdev.com
 
 - hires two engineers, one becomes my manager after i refuse to become manager
 - we have many disagreements, i decide to leave
-- anual revenue grew 10x in two years (and we made a whole lot of people happier)
+- anual revenue grew 10x in two years (~800k to ~10m) (and we made a whole lot of people happier)
 - company still exists, has probably 4x-5x more employees as when i started at least
 - awesome founders and designer
 
@@ -81,3 +81,7 @@ you can contact me at work@localhostdotdev.com
 - then making more websites with php
 - while writing about all that on my website
 - fooling around, trying a lot of languages, libraries, frameworks, linux distributions, code hosting services, personal and group projects
+
+-----
+
+feel free to google "localhostdotdev" (my recent online name), i have different writing style depending on the context
