@@ -64,7 +64,7 @@ you can contact me at work@localhostdotdev.com (in the process of making that em
 **2011**
 
 - started a large rails project
-- working on rails project with mainly three other people which i teach to (two are still rails engineers today (2019))
+- working on rails project with mainly three other very talented people
 
 **2010**
 
