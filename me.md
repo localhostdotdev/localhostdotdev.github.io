@@ -11,7 +11,7 @@ my main criterias are high standards especially with regards to engineering and 
 
 (i will provide my personal details if you are interested to work with me and i'm interested too, i'm european)
 
-you can contact me at work@localhostdotdev.com
+you can contact me at work@localhostdotdev.com (in the process of making that email address, you can use localhostdotdev@gmail.com meanwhile)
 
 **2019**
 
