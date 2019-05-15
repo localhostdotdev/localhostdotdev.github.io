@@ -84,4 +84,4 @@ you can contact me at work@localhostdotdev.com (in the process of making that em
 
 -----
 
-feel free to google "localhostdotdev" (my recent online name), i have different writing style depending on the context
+feel free to google "localhostdotdev" (my recent online name), i have different writing styles depending on the context
